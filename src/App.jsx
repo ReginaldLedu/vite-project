@@ -6,6 +6,7 @@ import { getData } from "./helpers/helpers";
 import { Search } from "./components/Search";
 
 function App() {
+  const key = "72a8287f040c69bbe9524b6d94ece76f";
   const [city, setCity] = useState("");
   const [cityData, setCityData] = useState({
     dt: 0,
@@ -16,7 +17,6 @@ function App() {
   const [weather, setWeather] = useState([]);
   const [currentWeather, setCurrentWeather] = useState([]);
   const [error, setError] = useState(false);
-  const APIKey = "72a8287f040c69bbe9524b6d94ece76f";
 
   const onClick = () => {
     setError(false);
@@ -24,13 +24,13 @@ function App() {
     setCurrentWeather([]);
     try {
       fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`,
+        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`,
       )
         .then((data) => data.json())
         .then((resp) => {
           if (resp.length > 0) {
             fetch(
-              `https://api.openweathermap.org/data/2.5/forecast?lat=${resp[0].lat}&lon=${resp[0].lon}&appid=${APIKey}`,
+              `https://api.openweathermap.org/data/2.5/forecast?lat=${resp[0].lat}&lon=${resp[0].lon}&appid=${key}`,
             )
               .then((data) => data.json())
               .then((weather) => {

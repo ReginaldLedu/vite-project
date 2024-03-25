@@ -7,7 +7,7 @@ export const Item = (props) => {
     <div className={styles.topPanel__carousel_item}>
       <p className={styles.carousel__item_date}>{props.item.date}</p>
       <img
-        src={`./src/assets/${props.item.icon}.png`}
+        src={`/vite-project/src/assets/${props.item.icon}.png`}
         alt="#"
         className={styles["carousel__item_img"]}
       />

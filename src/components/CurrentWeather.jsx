@@ -2,6 +2,8 @@
 import styles from "./CurrentWeather.module.css";
 
 export const CurrentWeather = (props) => {
+  console.log(props.currentWeather);
+  console.log(`.src/assets/${props.currentWeather.icon}.png`);
   return (
     <>
       {props.currentWeather.hours !== undefined ? (
@@ -10,7 +12,8 @@ export const CurrentWeather = (props) => {
           <div className={styles.currentWeather_box}>
             <img
               className={styles.currentWeather_img}
-              src={`./src/assets/${props.currentWeather.icon}.png`}
+              /*src="./Clouds.png"*/
+              src={`/vite-project/src/assets/${props.currentWeather.icon}.png`}
               alt=""
             />
             <div className={styles.currentWeather_temp}>
