@@ -12,8 +12,7 @@ export const CurrentWeather = (props) => {
           <div className={styles.currentWeather_box}>
             <img
               className={styles.currentWeather_img}
-              /*src="./Clouds.png"*/
-              src={`/vite-project/src/assets/${props.currentWeather.icon}.png`}
+              src={`./src/assets/${props.currentWeather.icon}.png`}
               alt=""
             />
             <div className={styles.currentWeather_temp}>

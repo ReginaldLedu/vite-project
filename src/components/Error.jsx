@@ -6,7 +6,7 @@ export const Error = () => {
       <p className={styles["error-text"]}>Что-то пошло не так</p>
       <img
         className={styles["error-img"]}
-        src="./vite-project/src/assets/error.png"
+        src="./src/assets/error.png"
         alt="ошибка"
       />
     </div>
