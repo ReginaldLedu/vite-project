@@ -1,0 +1,34 @@
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topPanel__carousel {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 98%;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*мобильная версия до 833 */
+@media (max-width: 833px) {
+  .topPanel__carousel {
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  /*планшетная версия от 834 до 1439*/
+  @media (max-width: 1439px) {
+    .topPanel__carousel {
+      margin: auto;
+      max-width: 98%;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

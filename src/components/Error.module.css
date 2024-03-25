@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Rubik";
+}
+
+.error-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error-text {
+  font-size: 22px;
+  line-height: 30px;
+  color: red;
+}
+.error-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
