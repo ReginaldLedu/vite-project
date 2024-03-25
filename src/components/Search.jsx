@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import styles from "./Search.module.css";
+
 export const Search = (props) => {
   return (
     <div className={styles.search__box}>

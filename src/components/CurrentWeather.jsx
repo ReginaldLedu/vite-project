@@ -2,7 +2,6 @@
 import styles from "./CurrentWeather.module.css";
 
 export const CurrentWeather = (props) => {
-  console.log(props);
   return (
     <>
       {props.currentWeather.hours !== undefined ? (

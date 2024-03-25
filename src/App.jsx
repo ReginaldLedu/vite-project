@@ -21,7 +21,7 @@ function App() {
   const onClick = () => {
     setError(false);
     setWeather([]);
-	 setCurrentWeather([])
+    setCurrentWeather([]);
     try {
       fetch(
         `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`,
@@ -57,14 +57,6 @@ function App() {
   return (
     <>
       <Search city={city} setCity={setCity} onClick={onClick} />
-
-      {/*<input
-        type="text"
-        placeholder="Введите город"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-      />
-  <button onClick={onClick}>Узнать погоду</button> */}
       {error === true ? <Error /> : " "}
       <CurrentWeather currentWeather={currentWeather} />
       <List weather={weather} city={cityData} />

@@ -1,8 +1,37 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение Vite-Project создано для отслеживания прогноза погоды в разных городах.
+Приложение развернуто с помощью сборщика VITE
 
-Currently, two official plugins are available:
+Возможности приложения:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Просмотр погоды в заданном пользователем городе.
+
+Пользователь вводит название города и получает текущий прогноз погоды и прогноз на ближайшие 5 дней.
+Отображается основная информация: температура, скорость ветра, влажность, иконка погодных условий (ясно, облачно, дождь и т. д.).
+
+Информация о погоде получена из открытого API OpenWeatherMap.
+
+Стек технологий
+
+React
+
+Ссылка на проект
+Deployment выполнен на платформе GitHub Pages
+
+Структура кода
+
+/src - основная папка для сборки проекта
+/src/assets - иконки приложения
+/src/components - компоненты для всего приложения
+/src/helpers - вспомогательные функции
+
+Запуск проекта локально
+Для клонирования репозитория выполните команду:
+git clone https://github.com/ReginaldLedu/vite-project.git
+
+Для установки зависимостей выполните команду:
+npm i
+
+Запуск локального сервера
+npm run dev
